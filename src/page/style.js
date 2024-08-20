@@ -21,7 +21,59 @@ export const Title = styled.div`
   padding-top: 60px;
   color: black;
 `;
+export const Listbox = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 514px;
+  height: 100vh;
+  border-left-style: dashed;
+  color: #d9d9d9;
+`;
 
+export const PayBtn = styled.div`
+  position: relative;
+  top: 100vh;
+  transform: translateY(-100%);
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+`;
+
+export const BtnText = styled.button`
+  width: 422px;
+  height: 70px;
+  border-left-style: dashed;
+  background-color: #fcc800;
+  color: white;
+  font-size: 26px;
+  font-weight: 500;
+`;
+export const Line = styled.div`
+  position: relative;
+  top: 760px;
+  right: 0;
+  width: 514px;
+  height: 120px;
+  border-top-style: dashed;
+  color: #d9d9d9;
+`;
+export const TotalText = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 60px;
+  padding-top: 810px;
+  display: flex;
+  gap: 50px;
+  color: black;
+  font-size: 28px;
+  font-weight: 700;
+`;
+
+export const Text = styled.div`
+  position: relative;
+`;
 export const Cam = styled.div`
   position: fixed;
   width: 930px;

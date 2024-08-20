@@ -9,6 +9,7 @@ import aripay from "../assets/aripay.svg";
 import { useNavigate } from "react-router-dom";
 
 const PayPage = () => {
+  const total = 10000000000;
   const navigate = useNavigate();
 
   const onClickBack = () => {
@@ -20,6 +21,13 @@ const PayPage = () => {
     <>
       <S.Arrow src={arrow} alt="arrow" onClick={onClickBack} />
       <S.Title>결제 수단</S.Title>
+      <S.Listbox>
+        <S.Line />
+        <S.TotalText>
+          <S.Text>금액</S.Text>
+          <S.Text>{total.toLocaleString()}원 결제</S.Text>
+        </S.TotalText>
+      </S.Listbox>
       <S.Pay>
         <S.Pay1>
           <S.Card src={card} alt="card" />
