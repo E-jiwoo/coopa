@@ -29,6 +29,9 @@ export const pay1 = styled.div`
   height: 200px;
   background-color: #d9d9d9;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const pay2 = styled.div`
   position: relative;
@@ -36,6 +39,9 @@ export const pay2 = styled.div`
   height: 200px;
   background-color: #d9d9d9;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const pay3 = styled.div`
   position: relative;
@@ -43,6 +49,9 @@ export const pay3 = styled.div`
   height: 200px;
   background-color: #d9d9d9;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const pay4 = styled.div`
   position: relative;
@@ -50,4 +59,12 @@ export const pay4 = styled.div`
   height: 200px;
   background-color: #d9d9d9;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
+
+export const card = styled.img``;
+export const phone = styled.img``;
+export const money = styled.img``;
+export const aripay = styled.img``;
