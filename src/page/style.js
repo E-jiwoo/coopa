@@ -13,10 +13,10 @@ export const Title = styled.div`
 
 export const cam = styled.div`
   position: fixed;
-  width: 1150px;
+  width: 930px;
   height: 700px;
   top: 150px;
-  left: 135px;
+  left: 240px;
   background-color: #c1c1c1;
 `;
 export const pay = styled.div`
