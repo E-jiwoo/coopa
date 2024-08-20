@@ -6,11 +6,19 @@ import card from "../assets/card.svg";
 import phone from "../assets/phone.svg";
 import money from "../assets/money.svg";
 import aripay from "../assets/aripay.svg";
+import { useNavigate } from "react-router-dom";
 
 const PayPage = () => {
+  const navigate = useNavigate();
+
+  const onClickBack = () => {
+    console.log("click");
+    navigate("/");
+  };
+
   return (
     <>
-      <S.Arrow src={arrow} alt="arrow" />
+      <S.Arrow src={arrow} alt="arrow" onClick={onClickBack} />
       <S.Title>결제 수단</S.Title>
       <S.Pay>
         <S.Pay1>

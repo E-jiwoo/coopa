@@ -8,6 +8,8 @@ export const Arrow = styled.img`
   left: 0;
   padding-left: 150px;
   padding-top: 60px;
+  cursor: pointer;
+  z-index: 10;
 `;
 export const Title = styled.div`
   position: fixed;
