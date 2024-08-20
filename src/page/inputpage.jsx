@@ -7,9 +7,9 @@ const inputpage = () => {
   return (
     <>
       <S.Title>상품입력</S.Title>
-      <S.cam>
+      <S.Cam>
         <Webcam style={{ width: "100%", height: "100%" }} />
-      </S.cam>
+      </S.Cam>
     </>
   );
 };

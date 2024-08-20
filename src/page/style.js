@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+export const Arrow = styled.img`
+  position: fixed;
+  width: 28px;
+  height: 45px;
+  top: 0;
+  left: 0;
+  padding-left: 150px;
+  padding-top: 60px;
+`;
 export const Title = styled.div`
   position: fixed;
   top: 0;
@@ -11,7 +20,7 @@ export const Title = styled.div`
   color: black;
 `;
 
-export const cam = styled.div`
+export const Cam = styled.div`
   position: fixed;
   width: 930px;
   height: 700px;
@@ -19,7 +28,7 @@ export const cam = styled.div`
   left: 240px;
   background-color: #c1c1c1;
 `;
-export const pay = styled.div`
+export const Pay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -31,7 +40,7 @@ export const pay = styled.div`
   flex-wrap: wrap;
   width: 1200px;
 `;
-export const pay1 = styled.div`
+export const Pay1 = styled.div`
   position: relative;
   width: 335px;
   height: 200px;
@@ -43,7 +52,7 @@ export const pay1 = styled.div`
   flex-direction: column;
   gap: 20px;
 `;
-export const pay2 = styled.div`
+export const Pay2 = styled.div`
   position: relative;
   width: 335px;
   height: 200px;
@@ -55,7 +64,7 @@ export const pay2 = styled.div`
   flex-direction: column;
   gap: 20px;
 `;
-export const pay3 = styled.div`
+export const Pay3 = styled.div`
   position: relative;
   width: 335px;
   height: 200px;
@@ -67,7 +76,7 @@ export const pay3 = styled.div`
   flex-direction: column;
   gap: 20px;
 `;
-export const pay4 = styled.div`
+export const Pay4 = styled.div`
   position: relative;
   width: 335px;
   height: 200px;
@@ -80,23 +89,23 @@ export const pay4 = styled.div`
   gap: 20px;
 `;
 
-export const card = styled.img``;
-export const phone = styled.img``;
-export const money = styled.img``;
-export const aripay = styled.img``;
-export const card_ = styled.div`
+export const Card = styled.img``;
+export const Phone = styled.img``;
+export const Money = styled.img``;
+export const Aripay = styled.img``;
+export const Card_ = styled.div`
   font-size: 22px;
   font-weight: 600;
 `;
-export const phone_ = styled.div`
+export const Phone_ = styled.div`
   font-size: 22px;
   font-weight: 600;
 `;
-export const money_ = styled.div`
+export const Money_ = styled.div`
   font-size: 22px;
   font-weight: 600;
 `;
-export const aripay_ = styled.div`
+export const Aripay_ = styled.div`
   font-size: 22px;
   font-weight: 600;
 `;
