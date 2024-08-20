@@ -11,31 +11,43 @@ export const Title = styled.div`
   color: black;
 `;
 
-export const Listbox = styled.div`
+export const pay = styled.div`
   position: absolute;
   top: 0;
-  right: 0;
-  width: 514px;
-  height: 100vh;
-  border-left-style: dashed;
-  color: #d9d9d9;
-`;
-
-export const PayBtn = styled.div`
-  position: relative;
-  top: 100vh;
-  transform: translateY(-100%);
-  padding-bottom: 60px;
+  left: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 250px;
+  padding-left: 150px;
+  flex-wrap: wrap;
+  width: 1200px;
 `;
-
-export const BtnText = styled.button`
-  width: 342px;
-  height: 59px;
-  border-left-style: dashed;
-  background-color: #fcc800;
-  color: white;
-  font-size: 22px;
-  font-weight: 500;
+export const pay1 = styled.div`
+  position: relative;
+  width: 335px;
+  height: 200px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+`;
+export const pay2 = styled.div`
+  position: relative;
+  width: 335px;
+  height: 200px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+`;
+export const pay3 = styled.div`
+  position: relative;
+  width: 335px;
+  height: 200px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+`;
+export const pay4 = styled.div`
+  position: relative;
+  width: 335px;
+  height: 200px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
 `;
