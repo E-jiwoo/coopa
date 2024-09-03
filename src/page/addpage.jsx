@@ -26,13 +26,36 @@ const AddPage = () => {
         <S.Categorly1>물품 목록</S.Categorly1>
         <S.Categorly2>수량</S.Categorly2>
         <S.Categorly3>가격</S.Categorly3>
-        <S.PlusBtn>
-          <S.Plus_BtnText>상품 추가</S.Plus_BtnText>
-        </S.PlusBtn>
         <S.PayBtn onClick={onClickNext}>
           <S.Pay_BtnText>{total.toLocaleString()}원 결제</S.Pay_BtnText>
         </S.PayBtn>
       </S.Listbox>
+      <S.PayBox>
+        <S.Pay>
+          <S.PayText>도리토스</S.PayText>
+        </S.Pay>
+        <S.Pay>
+          <S.PayText>빼빼로</S.PayText>
+        </S.Pay>
+        <S.Pay>
+          <S.PayText>포카리스웨트</S.PayText>
+        </S.Pay>
+        <S.Pay>
+          <S.PayText>아리페이</S.PayText>
+        </S.Pay>
+        <S.Pay>
+          <S.PayText>아리페이</S.PayText>
+        </S.Pay>
+        <S.Pay>
+          <S.PayText>아리페이</S.PayText>
+        </S.Pay>
+        <S.Pay>
+          <S.PayText>아리페이</S.PayText>
+        </S.Pay>
+        <S.Pay>
+          <S.PayText>아리페이</S.PayText>
+        </S.Pay>
+      </S.PayBox>
     </>
   );
 };

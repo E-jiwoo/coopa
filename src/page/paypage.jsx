@@ -50,24 +50,24 @@ const PayPage = () => {
           <S.Text>{total.toLocaleString()}원 결제</S.Text>
         </S.TotalText>
       </S.Listbox>
-      <S.Pay>
-        <S.Pay1>
-          <S.Card src={card} alt="card" />
-          <S.Card_>신용카드</S.Card_>
-        </S.Pay1>
-        <S.Pay2>
-          <S.Phone src={phone} alt="phone" />
-          <S.Phone_>QR 결제</S.Phone_>
-        </S.Pay2>
-        <S.Pay3>
-          <S.Money src={money} alt="money" />
-          <S.Money_>현금</S.Money_>
-        </S.Pay3>
-        <S.Pay4 onClick={handlePayClick}>
-          <S.Aripay src={aripay} alt="aripay" />
-          <S.Aripay_>아리페이</S.Aripay_>
-        </S.Pay4>
-      </S.Pay>
+      <S.PayBox>
+        <S.Pay>
+          <S.PayImg src={card} alt="card" />
+          <S.PayText>신용카드</S.PayText>
+        </S.Pay>
+        <S.Pay>
+          <S.PayImg src={phone} alt="phone" />
+          <S.PayText>QR 결제</S.PayText>
+        </S.Pay>
+        <S.Pay>
+          <S.PayImg src={money} alt="money" />
+          <S.PayText>현금</S.PayText>
+        </S.Pay>
+        <S.Pay onClick={handlePayClick}>
+          <S.PayImg src={aripay} alt="aripay" />
+          <S.PayText>아리페이</S.PayText>
+        </S.Pay>
+      </S.PayBox>
 
       {PayModal && (
         <S.ModalOverlay>
