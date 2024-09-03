@@ -30,11 +30,13 @@ export const Listbox = styled.div`
   height: 100vh;
   border-left-style: dashed;
   color: #d9d9d9;
+  z-index: 5;
 `;
+
 export const Categorly1 = styled.div`
   position: relative;
   top: 30px;
-  left: 80px;
+  left: 55px;
   font-size: 18px;
   font-weight: 700;
   padding-top: 60px;
@@ -44,7 +46,7 @@ export const Categorly1 = styled.div`
 export const Categorly2 = styled.div`
   position: relative;
   top: 10px;
-  left: 270px;
+  left: 290px;
   font-size: 18px;
   font-weight: 700;
   color: black;
@@ -53,11 +55,54 @@ export const Categorly2 = styled.div`
 export const Categorly3 = styled.div`
   position: relative;
   bottom: 10px;
-  left: 390px;
+  left: 425px;
   font-size: 18px;
   font-weight: 700;
   color: black;
 `;
+
+export const List = styled.div`
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 55px;
+  color: #000000;
+`;
+
+export const ListName = styled.span`
+  flex: 2;
+  font-size: 18px;
+  font-weight: 500;
+`;
+
+export const ListMoney = styled.span`
+  flex: 1;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+`;
+
+export const ListMinus = styled.img`
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+`;
+
+export const ListNumber = styled.span`
+  width: 60px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+`;
+
+export const ListPlus = styled.img`
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+`;
+
 export const PlusBtn = styled.div`
   position: relative;
   top: 100px;
@@ -65,14 +110,14 @@ export const PlusBtn = styled.div`
   display: flex;
   justify-content: center;
 `;
+
 export const PayBtn = styled.div`
   position: relative;
   top: 100vh;
   transform: translateY(-100%);
-  padding-bottom: 120px;
   display: flex;
   justify-content: center;
-  padding-bottom: 260px;
+  padding-bottom: 400px;
 `;
 
 export const Plus_BtnText = styled.button`
@@ -227,4 +272,46 @@ export const ModalButton_OK = styled.button`
   text-align: center;
   left: 250px;
   top: 45px;
+`;
+
+export const SearchContainer = styled.div`
+  position: relative;
+  width: 100%;
+  margin: 16px 0;
+  bottom: 265px;
+  left: 152px;
+`;
+
+export const SearchIcon = styled.img`
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+`;
+
+export const Search = styled.input`
+  z-index: 10;
+  width: 1080px;
+  height: 65px;
+  padding-left: 80px;
+  border-radius: 10px;
+  border: none;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #efefef;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #c1c1c1;
+  }
+`;
+export const Img = styled.img`
+  position: relative;
+  width: 31px;
+  height: 51px;
+  top: 5px;
+  right: 20px;
 `;
