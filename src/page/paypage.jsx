@@ -16,11 +16,21 @@ const PayPage = () => {
 
   const onClickBack = () => {
     console.log("click");
-    navigate("/");
+    navigate(-1);
+  };
+
+  const onClickAdd = () => {
+    console.log("click");
+    navigate("/add");
   };
 
   const handlePayClick = () => {
     setPayModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setPayModal(false);
+    navigate("/");
   };
 
   return (
@@ -32,7 +42,7 @@ const PayPage = () => {
         <S.Categorly2>수량</S.Categorly2>
         <S.Categorly3>가격</S.Categorly3>
         <S.PlusBtn>
-          <S.Plus_BtnText>상품 추가</S.Plus_BtnText>
+          <S.Plus_BtnText onClick={onClickAdd}>상품 추가</S.Plus_BtnText>
         </S.PlusBtn>
         <S.Line />
         <S.TotalText>
@@ -65,6 +75,9 @@ const PayPage = () => {
             <S.ModalImg src={check} alt="check" />
             <S.ModalAccount>5,900원</S.ModalAccount>
             <S.ModalText>결제 완료되었습니다!</S.ModalText>
+            <S.ModalButton_OK onClick={handleCloseModal}>
+              계속 결제하기
+            </S.ModalButton_OK>
           </S.ModalContent>
         </S.ModalOverlay>
       )}

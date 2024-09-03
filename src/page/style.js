@@ -223,8 +223,8 @@ export const ModalOverlay = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  width: 650px;
-  height: 300px;
+  width: 760px;
+  height: 350px;
   background-color: #ffffff;
   border-radius: 15px;
   display: flex;
@@ -256,15 +256,18 @@ export const ModalText = styled.div`
 `;
 
 export const ModalButton_OK = styled.button`
-  width: 60%;
+  position: relative;
+  width: 27%;
   padding: 15px;
-  background-color: #ff1e2e;
+  background-color: #fcc800;
   color: #ffffff;
   font-size: 18px;
   font-family: "Pretendard";
   font-weight: 500;
   border: none;
-  border-radius: 0px 0px 0px 15px;
+  border-radius: 5px;
   cursor: pointer;
   text-align: center;
+  left: 250px;
+  top: 45px;
 `;
