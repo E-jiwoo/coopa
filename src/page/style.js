@@ -158,7 +158,12 @@ export const PayImg = styled.img``;
 
 export const PayText = styled.div`
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
+`;
+
+export const PayPrice = styled.div`
+  font-size: 22px;
+  font-weight: 500;
 `;
 
 export const ModalOverlay = styled.div`

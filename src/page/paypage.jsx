@@ -41,9 +41,6 @@ const PayPage = () => {
         <S.Categorly1>물품 목록</S.Categorly1>
         <S.Categorly2>수량</S.Categorly2>
         <S.Categorly3>가격</S.Categorly3>
-        <S.PlusBtn>
-          <S.Plus_BtnText onClick={onClickAdd}>상품 추가</S.Plus_BtnText>
-        </S.PlusBtn>
         <S.Line />
         <S.TotalText>
           <S.Text>금액</S.Text>

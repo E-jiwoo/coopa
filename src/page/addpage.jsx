@@ -33,27 +33,39 @@ const AddPage = () => {
       <S.PayBox>
         <S.Pay>
           <S.PayText>도리토스</S.PayText>
+          <S.PayPrice>2,000원</S.PayPrice>
         </S.Pay>
         <S.Pay>
           <S.PayText>빼빼로</S.PayText>
+          <S.PayPrice>1,500원</S.PayPrice>
         </S.Pay>
         <S.Pay>
           <S.PayText>포카리스웨트</S.PayText>
+          <S.PayPrice>1,300원</S.PayPrice>
         </S.Pay>
         <S.Pay>
-          <S.PayText>아리페이</S.PayText>
+          <S.PayText>마이구미</S.PayText>
+          <S.PayPrice>1,200원</S.PayPrice>
         </S.Pay>
         <S.Pay>
-          <S.PayText>아리페이</S.PayText>
+          <S.PayText>펩시_콜라_캔_500ml</S.PayText>
+          <S.PayPrice>1,400원</S.PayPrice>
         </S.Pay>
         <S.Pay>
-          <S.PayText>아리페이</S.PayText>
+          <S.PayText>티니핑_사과맛</S.PayText>
+          <S.PayPrice>1,800원</S.PayPrice>
         </S.Pay>
         <S.Pay>
-          <S.PayText>아리페이</S.PayText>
+          <S.PayText>티니핑_딸기맛</S.PayText>
+          <S.PayPrice>1,800원</S.PayPrice>
         </S.Pay>
         <S.Pay>
-          <S.PayText>아리페이</S.PayText>
+          <S.PayText>티니핑_포도맛</S.PayText>
+          <S.PayPrice>1,800원</S.PayPrice>
+        </S.Pay>
+        <S.Pay>
+          <S.PayText>슈퍼콘_초코</S.PayText>
+          <S.PayPrice>1,500원</S.PayPrice>
         </S.Pay>
       </S.PayBox>
     </>
