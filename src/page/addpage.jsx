@@ -79,7 +79,9 @@ const AddPage = () => {
               alt="plus"
               onClick={() => handlePlus(item.name)}
             />
-            <S.ListMoney>{item.price * item.quantity}원</S.ListMoney>
+            <S.ListMoney>
+              {(item.price * item.quantity).toLocaleString()}원
+            </S.ListMoney>
           </S.List>
         ))}
         <S.PayBtn onClick={onClickNext}>
