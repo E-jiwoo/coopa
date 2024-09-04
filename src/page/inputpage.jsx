@@ -13,8 +13,10 @@ const InputPage = () => {
   const navigate = useNavigate();
 
   const fetchItems = async () => {
+    console.log("Fetching items...");
     try {
-      const response = await axios.get("http://your-backend-url/items");
+      const response = await axios.post("http://10.150.150.39:8080/api/item/");
+      console.log("Response:", response);
       const fetchedItems = response.data;
       setItems(fetchedItems);
 
@@ -68,21 +70,28 @@ const InputPage = () => {
     if (webcamRef.current) {
       const imageSrc = webcamRef.current.getScreenshot();
       if (imageSrc) {
-        const imageBlob = await fetch(imageSrc).then((res) => res.blob());
-        const url = window.URL.createObjectURL(imageBlob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = `capture-${Date.now()}.jpg`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
         try {
-          await axios.post("http://your-backend-url/upload", {
-            image: imageSrc,
+          // Convert imageSrc to a Base64 string
+          const base64Image = imageSrc.split(",")[1];
+          console.log("Base64 Image:", base64Image);
+
+          // Optional: Convert the Base64 string back to a Blob and create a download link
+          const imageBlob = await fetch(imageSrc).then((res) => res.blob());
+          const url = window.URL.createObjectURL(imageBlob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = `capture-${Date.now()}.jpg`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+
+          // Upload the image if needed
+          await axios.post("http://10.150.150.39:8080/api/item/scan", {
+            image: base64Image, // Change this if your API expects a different format
           });
           console.log("Image uploaded successfully");
         } catch (error) {
-          console.error("Error uploading image:", error);
+          console.error("Error handling capture:", error);
         }
       }
     }
@@ -96,7 +105,6 @@ const InputPage = () => {
   };
 
   useEffect(() => {
-    fetchItems();
     window.addEventListener("keydown", handleKeyPress);
     return () => {
       window.removeEventListener("keydown", handleKeyPress);

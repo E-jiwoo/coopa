@@ -11,7 +11,8 @@ const AddPage = () => {
   const navigate = useNavigate();
 
   const onClickNext = () => {
-    navigate("/pay");
+    const totalAmount = calculateTotalAmount();
+    navigate("/pay", { state: { selectedItems, totalAmount } });
   };
 
   const onClickBack = () => {
