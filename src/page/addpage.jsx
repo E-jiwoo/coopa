@@ -92,8 +92,8 @@ const AddPage = () => {
         </S.PayBtn>
       </S.Listbox>
       <S.SearchContainer>
-        <S.SearchIcon src={search} alt="search icon" />
         <S.Search type="text" placeholder="상품을 검색하세요" />
+        <S.SearchIcon src={search} alt="search icon" />
       </S.SearchContainer>
 
       <S.PayBox>

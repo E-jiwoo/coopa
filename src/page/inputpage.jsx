@@ -55,14 +55,25 @@ const InputPage = () => {
           console.log("Base64 Image:", base64Image);
 
           const response = await axios.post(
-            "http://10.150.150.39:8080/api/item/scan",
+            "http://192.168.0.2:8080/api/item/scan",
             { image: base64Image }
           );
 
-          console.log("Server Response:", response.data);
-          const fetchedItems = response.data;
-          setItems(fetchedItems);
-          updateTotal(fetchedItems);
+          console.log("Full Response:", response.data);
+
+          const resultList = response.data.resultList;
+          if (resultList && typeof resultList === "object") {
+            const fetchedItems = Object.values(resultList);
+            setItems(fetchedItems);
+            updateTotal(fetchedItems); // 업데이트된 총액 계산
+          } else {
+            console.error(
+              "Unexpected response format. Expected an object with resultList:",
+              response.data
+            );
+            setItems([]);
+            setTotal(0);
+          }
         } catch (error) {
           console.error("Error handling capture:", error);
         }
@@ -91,23 +102,26 @@ const InputPage = () => {
         <S.Categorly1>물품 목록</S.Categorly1>
         <S.Categorly2>수량</S.Categorly2>
         <S.Categorly3>가격</S.Categorly3>
-        {items.map((item) => (
-          <S.List key={item.itemId}>
-            <S.ListName>{item.itemName}</S.ListName>
-            <S.ListMoney>{item.itemPrice * item.qty}원</S.ListMoney>
-            <S.ListMinus
-              src={minus}
-              alt="minus"
-              onClick={() => handleMinus(item.itemId)}
-            />
-            <S.ListNumber>{item.qty}</S.ListNumber>
-            <S.ListPlus
-              src={plus}
-              alt="plus"
-              onClick={() => handlePlus(item.itemId)}
-            />
-          </S.List>
-        ))}
+        {Array.isArray(items) &&
+          items.map((item) => (
+            <S.List key={item.itemId}>
+              <S.ListName>{item.itemName}</S.ListName>
+              <S.ListMinus
+                src={minus}
+                alt="minus"
+                onClick={() => handleMinus(item.itemId)}
+              />
+              <S.ListNumber>{item.qty}</S.ListNumber>
+              <S.ListPlus
+                src={plus}
+                alt="plus"
+                onClick={() => handlePlus(item.itemId)}
+              />
+              <S.ListMoney>
+                {(item.itemPrice * item.qty).toLocaleString()}원
+              </S.ListMoney>
+            </S.List>
+          ))}
         <S.PlusBtn onClick={onClickAdd}>
           <S.Plus_BtnText>상품 추가</S.Plus_BtnText>
         </S.PlusBtn>

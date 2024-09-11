@@ -55,15 +55,15 @@ const PayPage = () => {
       </S.Listbox>
 
       <S.PayBox>
-        <S.Pay>
+        <S.Pay onClick={handlePayClick}>
           <S.PayImg src={card} alt="card" />
           <S.PayText>신용카드</S.PayText>
         </S.Pay>
-        <S.Pay>
+        <S.Pay onClick={handlePayClick}>
           <S.PayImg src={phone} alt="phone" />
           <S.PayText>QR 결제</S.PayText>
         </S.Pay>
-        <S.Pay>
+        <S.Pay onClick={handlePayClick}>
           <S.PayImg src={money} alt="money" />
           <S.PayText>현금</S.PayText>
         </S.Pay>

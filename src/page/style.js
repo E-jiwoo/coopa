@@ -140,8 +140,8 @@ export const Pay_BtnText = styled.button`
   font-weight: 500;
 `;
 export const Line = styled.div`
-  position: relative;
-  top: 760px;
+  position: fixed;
+  top: 750px;
   right: 0;
   width: 514px;
   height: 120px;
@@ -152,7 +152,7 @@ export const TotalText = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  padding-left: 60px;
+  padding-left: 40px;
   padding-top: 810px;
   display: flex;
   gap: 230px;
@@ -275,11 +275,11 @@ export const ModalButton_OK = styled.button`
 `;
 
 export const SearchContainer = styled.div`
-  position: relative;
+  position: fixed;
   width: 100%;
   margin: 16px 0;
-  bottom: 265px;
-  left: 152px;
+  bottom: 670px;
+  left: 154px;
 `;
 
 export const SearchIcon = styled.img`

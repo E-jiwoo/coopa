@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: normal;
     font-style: normal;
     white-space: nowrap;
+    overflow: hidden;
   }
 `;
 
