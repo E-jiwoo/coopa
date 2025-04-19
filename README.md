@@ -1,8 +1,32 @@
-# React + Vite
+# 이미지 분석 기반 결제 시스템
+![767shots_so (1) (2)](https://github.com/user-attachments/assets/a679f627-84fa-491b-a5bd-8499c189f9a6)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+Eye-Cashier는 이미지 분석 기반 결제 시스템입니다. 
+<br/>
+Eye-Cashier는 계산대에 부착된 고성능 카메라를 활용하여 물품 전체를 촬영하고, 인공지능(AI) 기술을 통해 물품의 이미지를 분석합니다.
+<br/>
+이를 통해 물품의 명칭, 위치, 크기를 자동으로 인식하여 계산대에 입력하게 하는 시스템입니다.
+<br/>
+이 시스템은 한 번의 인식으로 여러 물품을 동시에 처리할 수 있어, 계산 과정을 신속하고 효율적으로 만듭니다.
 
-Currently, two official plugins are available:
+## Pain Point
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**제한된 시간** 안에 **많은 고객**을 처리해야 하는 상황에서 운영자의 숙련도에 따라 계산 속도가 달라지며, 미숙한 경우 계산이 지체되는 문제가 발생했습니다. 
+<br/>
+또한, 바코드 인식 시스템에서는 **이미 인식된 바코드**를 **재인식**하거나 느린 스캔 속도로 인해 시간 지체가 발생했습니다. 특히 특정 시간대에 학생들이 몰리는 경우 대기 시간이 길어지면서 판매자들이 더욱 촉박함을 느끼게 됩니다.
+<br/>
+이와 더불어 **바코드 인식**의 **한계**도 문제로 지적되었습니다. <br/>
+바코드 인식 문제는 포장의 재질이나 바코드 상태에 따라 발생하며, 예를 들어 비닐 재질이나 구겨진 바코드에서 문제가 자주 나타났습니다. 이로 인해 중복 인식이나 다수의 동일 상품을 반복적으로 스캔해야 하는 상황이 발생하고, 단순한 바코드 인식 오류가 **고객 경험**을 **저하**시켰습니다. <br/>
+
+## Solution
+
+**결제 담당자들에게 변화를 주자!**
+<br/>
+결제 담당자들의 특성에 따라 숙련도의 차이가 발생할 수밖에 없으며, 숙련도를 갖추기 위해 많은 시간과 노력이 필요합니다. 이러한 문제를 해결하기 위해 담당자들 대신 더 효율적인 결제 방법을 고민하게 되었습니다.
+<br/>
+**결제 시스템에 변화를 주자!**
+<br/>
+바코드나 상품 인식을 더 편리하게 할 수 있는 시스템을 도입하면, 사람처럼 숙련도 차이가 발생하지 않고 일관된 속도를 유지할 수 있습니다. 
+<br/>
+이를 위해 우리는 결제 시스템에 변화를 주고자 했으며, 우선적으로 키오스크를 활용해 학생들이 계산을 더 편리하게 진행할 수 있도록 했습니다. 웹캠으로 상품을 인식하면 AI가 상품 정보를 판단해 결제 리스트에 자동으로 등록되도록 하는 **Eye-Cashier** 시스템을 도입하려 합니다.
